@@ -1,0 +1,122 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+body
+{
+    background-image: url('../images/gymbackground.jpg');
+    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.logo
+{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logoImage
+{
+    width: 20%;
+    height: 300px;
+    background: yellow;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.containerButtons
+{
+    width: 100%;
+    height:auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.buttons
+{
+    width: 15%;
+    height: 250px;
+    background: yellow;
+    margin: 20px;
+    box-sizing: border-box;
+
+
+}
+
+.buttons input
+{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:1200px)
+{
+    .buttons
+    {
+        width:20%;
+        height: 250px;
+    }
+    .logoImage
+    {
+        width:30%;
+        height: 300px;
+        background-color: blue;
+    }
+}
+
+/* @media screen and (max-width:1000px)
+{
+    .buttons
+    {
+        height: 175px;
+        
+    }
+    .logoImage
+    {
+        height: 175px;
+        background-color: green;
+    }
+} */
+
+@media screen and (max-width:800px)
+{
+    .buttons
+    {
+        width: 17%;
+        height: 150px;
+        
+    }
+    .logoImage
+    {
+        height: 250px;
+        background-color: pink;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    .buttons
+    {
+        width:30%;
+        height: 175px;
+        background-color: black;
+    }
+    .logoImage
+    {
+        width:40%;
+    }
+}
+
+
