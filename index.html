@@ -3,28 +3,57 @@
 <head>
     <title>Intro</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/script.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="sports.html">Sports</a>
+        <a href="gym.html">Gym</a>
+        <a href="yoga.html">Yoga</a>
+        <a href="bmicalculator.html">BMI calculator</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+    
     <div class="logo">
         <div class="logoImage">
-            <!-- <input id = "sports" type="image" src="images/basketball.png" alt="basketball"> -->
+            <img src="images/avatar.png" alt="basketball image">
         </div>
     </div>
     <div class="containerButtons">
         
         <div class="buttons">
-            <input id = "sports" type="image" src="images/basketball.png" alt="basketball">
+            <a href="sports.html">
+                <img src="images/basketball.png" alt="basketball image">
+            </a>
+            <h3 class="catName">Sports</h3>
         </div>
         <div class="buttons">
-            <!-- <input id = "sports" type="image" src="images/basketball.png" alt="basketball"> -->
+            <a href="gym.html">
+                <img src="images/gym.png" alt="gym image">
+                
+            </a>
+            <h3 class="catName">Gym</h3>
         </div>
         <div class="buttons">
-            <!-- <input id = "sports" type="image" src="images/basketball.png" alt="basketball"> -->
+            <a href="yoga.html">
+                <img src="images/yoga.png" alt="yoga image">
+            </a>
+            <h3 class="catName">Yoga</h3>
         </div>
         <div class="buttons">
-            <!-- <input id = "sports" type="image" src="images/basketball.png" alt="basketball"> -->
+            <a href="#bmiCalc">
+                <img src="images/bmicalculator.png" alt="bmi calculator image">
+            </a>
+            <p class="catName" id="bmiP">BMI Calculator</p>
         </div>
         
     </div>

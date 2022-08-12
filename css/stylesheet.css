@@ -7,116 +7,471 @@
 
 body
 {
-    background-image: url('../images/gymbackground.jpg');
+    /* background-image: url('../images/gymbackground.jpg'); */
     height: 100vh;
     width: 100%;
     min-height: 100vh;
+    background-image: url('../images/gymbackground.jpg');
     background-size: 100% 100%;
     background-position: center;
     background-attachment: fixed;
+    position: relative;
+    font-family: "Source Code Pro";
 }
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 16px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: "Source Code Pro";
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #e7d3d3;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #e7d3d3;
+    color: black;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+
 
 .logo
 {
     width: 100%;
     height:auto;
     display: flex;
+    margin-top: 5%;
+    position: absolute;
     justify-content: center;
+    top: 0%;
+    
 }
 
 .logoImage
 {
     width: 20%;
     height: 300px;
-    background: yellow;
+    background: white;
     margin: 20px;
     box-sizing: border-box;
+    border-radius: 5%;
+    border: 1px solid #000;
+
+}
+
+.logoImage img
+{
+  width: 100%;
+  height: 100%;
 }
 
 .containerButtons
 {
     width: 100%;
     height:auto;
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
+    position: absolute;
+    top: 55%;
+}
+
+.containerButtons .catName
+{
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Source Code Pro";
 }
 
 .buttons
 {
     width: 15%;
     height: 250px;
-    background: yellow;
-    margin: 20px;
     box-sizing: border-box;
-
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid #000;
 
 }
 
-.buttons input
+.buttons::before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, 0.9);
+    position: absolute;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: -1;
+
+}
+
+
+
+.buttons img
 {
     width: 100%;
     height: 100%;
 }
 
-@media screen and (max-width:1200px)
+
+
+
+
+
+  #sportsSection1
+  {
+    width: 100%;
+    height:100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 0%;
+    font-size: 2rem;
+    background-color:#e7d3d3 ;
+  }
+
+
+  .containerContent
 {
-    .buttons
-    {
-        width:20%;
-        height: 250px;
-    }
-    .logoImage
-    {
-        width:30%;
-        height: 300px;
-        background-color: blue;
-    }
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    position: absolute;
+    top: 5%;
 }
 
-/* @media screen and (max-width:1000px)
-{
-    .buttons
-    {
-        height: 175px;
+  #sportsSection1 img
+  {
+    position: relative;
+    width: 30%;
+    height: auto;
+    padding-top: 13%;
+    margin-left: 30%;
+  }
+
+  #sportsSection1 #basketball
+  {
+      font-size: 25px;
+      width: 40%;
+      float: right;
+      margin-right: 10%;
+      margin-top: 18%;
+  }
+
+
+  #gymSection1
+  {
+      
+    width: 100%;
+    height:100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 0%;
+    font-size: 2rem;
+    background-color:#e7d3d3 ;
+  
+  }
+
+
+
+  #gymSection1 img
+  {
+    position: relative;
+    width: 80%;
+    height: auto;
+    padding-top: 5%;
+    margin-left: 5%;
+  }
+
+  #gymSection1 #gym
+  {
+      font-size: 25px;
+      width: 40%;
+      float: right;
+      margin-right: 10%;
+      margin-top: 18%;
+  }
+
+  #yogaSection1
+  {
+      
+    width: 100%;
+    height:100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 0%;
+    font-size: 2rem;
+    background-color:#e7d3d3 ;
+  
+  }
+
+
+
+  #yogaSection1 img
+  {
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding-top: 5%;
+    margin-left: 25%;
+  }
+
+  #yogaSection1 #yoga
+  {
+      font-size: 25px;
+      width: 40%;
+      float: right;
+      margin-right: 10%;
+      margin-top: 18%;
+  }
+
+  #bmiSection1
+  {
+      
+
+      width: 100%;
+    height:auto;
+    display: flex;
+    margin-top: 5%;
+    position: absolute;
+    justify-content: center;
+    top: 0%;
+  
+  }
+
+
+
+
+  #bmiSection1 .bmiContainer
+  {
+    
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    float: left;
+    margin-top: 15%;
+    margin-left: 0%;
+    border: 5px solid #888169;
+    padding: 25px;
+  }
+
+  #bmiSection1 .bmiContainer label
+  {
+    
+    font-size: 1.5rem;
+  }
+
+  .bmiContainer #height
+  {
+    min-height: 30px;
+    width: 100%;
+    border: 1px solid #000;
+    
+  }
+
+  .bmiContainer #weight
+  {
+    min-height: 30px;
+    width: 100%;
+    border: 1px solid #000;
+  }
+
+  .bmiContainer button
+  {
+    min-height: 50px;
+    min-width: 100px;
+    margin-left: 120px;
+    font-size: 1.5rem;
+    font-family: "Source Code Pro";
+  }
+
+  .bmiContainer #result
+  {
+    border: 1px solid #000;
+    min-height: 50px;
+    width: 100%;
+    font-size: .9rem;
+    font-family: "Source Code Pro";
+  }
+
+  @media screen and (max-width:720px)
+  {
+      .buttons
+      {
+          width: 20%;
+          height: 160px;
+          margin-top: 20px;
+      }
+      .buttons #bmiP
+      {
+        font-size: 1.5rem;
+      }
+      .logoImage
+      {
+          width: 35%;
+          height: 220px;
+      }
+      .logo
+      {
+        top: 10%;
+      }
+      .containerButtons
+      {
+          top: 57%;
+      }
+      .containerContent
+      {
+        top:5%;
+        font-size: 1.5rem;
+      }
+
+      #sportsSection1 img
+      {
+        margin-left: 35%;
+      }
+      #gymSection1 img
+      {
         
-    }
-    .logoImage
-    {
-        height: 175px;
-        background-color: green;
-    }
-} */
-
-@media screen and (max-width:800px)
-{
-    .buttons
-    {
-        width: 17%;
-        height: 150px;
+        margin-left:10%;
+        width: 80%;
+      }
+      #yogaSection1 img
+      {
         
+        margin-left:10%;
+        width: 80%;
+      }
+      #bmiSection1 .bmiContainer
+      {
+        margin-top: 220px;
+        margin-left: 20px;
+      }
+      #bmiSection1 .bmiContainer label
+      {
+        font-size: 1.5rem;
+      }
+  }
+  
+  @media screen and (max-width:540px)
+  {
+      .containerButtons
+      {
+          top: 30%;
+      }
+      .buttons
+      {
+          width:35%;
+          height: 150px;
+          margin-top: 70px;
+      }
+      .logoImage
+      {
+          width:40%;
+          height: 180px;
+      }
+      .logo
+      {
+          top: 5%;
+      }
+      .containerContent
+      {
+        top:10%;
+        font-size: 1.5rem;
+      }
+      #sportsSection1 img
+      {
+        margin-left: 35%;
+      }
+      #gymSection1 img
+      {
+        
+        margin-left:10%;
+        width: 80%;
+      }
+      #yogaSection1 img
+      {
+        
+        margin-left:10%;
+        width: 80%;
+      }
+      #bmiSection1 .bmiContainer
+      {
+        margin-top: 230px;
+        margin-left: 0;
+      }
+      #bmiSection1 .bmiContainer label
+      {
+        font-size: 1.5rem;
+      }
+      
+  
+  }
+  
+  @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
     }
-    .logoImage
-    {
-        height: 250px;
-        background-color: pink;
+  
+  @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 9;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
     }
-}
-
-@media screen and (max-width:600px)
-{
-    .buttons
-    {
-        width:30%;
-        height: 175px;
-        background-color: black;
-    }
-    .logoImage
-    {
-        width:40%;
-    }
-}
 
 
